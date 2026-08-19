@@ -1,6 +1,8 @@
 # Enough to do the challenge in Python. Add whatever else you need.
 pandas
 numpy
-scikit-learn
+# >=1.6 because HistGradientBoostingRegressor's categorical_features="from_dtype"
+# became the default in 1.6, and the notebook relies on it.
+scikit-learn>=1.6
 matplotlib
 jupyter
